@@ -40,13 +40,15 @@ int main() {
     scanf("%d", &age);
     scanf(" %c", &gender);
     if (age >= 18) {
-        if (gender == 'M' || gender == 'm') {
+        if (gender == 'M' || gender == 'm') {         //||means or
             printf("You are a male adult.");
         } else if (gender == 'F' || gender == 'f') {
             printf("You are a female adult.");
         } else {
             printf("Invalid gender input.");
         }
+        /*For valid genders ('M/m' or 'F/f'):
+Print whether the participant is a "male adult/minor" or "female adult/minor".*/
     } else {
         if (gender == 'M' || gender == 'm') {
             printf("You are a male minor.");
